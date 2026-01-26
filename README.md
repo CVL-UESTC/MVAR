@@ -3,7 +3,7 @@
 <img src="asset/intro_3.png" style="border-radius: 8px">
 
 <h2>
-MVAR: Visual Autoregressive Modeling with Scale and Spatial Markovian Conditioning
+MVAR: Visual Autoregressive Modeling with Scale and Spatial Markovian Conditioning (ICLR 2026)
 </h2>
 
 [Jinhua Zhang](https://scholar.google.com/citations?user=tyYxiXoAAAAJ),  [Wei Long](https://scholar.google.com/citations?user=CsVTBJoAAAAJ),  [Minghao Han](https://scholar.google.com/citations?hl=en&user=IqrXj74AAAAJ),  [Weiyi You](https://scholar.google.com/citations?user=q4uALoAAAAAJ),  [Shuhang Gu](https://scholar.google.com/citations?user=-kSTt40AAAAJ)
