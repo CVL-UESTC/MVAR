@@ -10,6 +10,7 @@ MVAR: Visual Autoregressive Modeling with Scale and Spatial Markovian Conditioni
 
 [![arXiv](https://img.shields.io/badge/arXiv-2505.12742-b31b1b.svg)](https://arxiv.org/abs/2505.12742)
 [![GitHub Stars](https://img.shields.io/github/stars/LabShuHangGU/MVAR?style=social)](https://github.com/LabShuHangGU/MVAR)
+[![Project Page](https://img.shields.io/badge/Project-Page-green?style=flat&logo=googlechrome&logoColor=white)](https://nuanbaobao.github.io/MVAR)
 
 </div>
 <!--
