@@ -8,7 +8,7 @@ MVAR: Visual Autoregressive Modeling with Scale and Spatial Markovian Conditioni
 
 [Jinhua Zhang](https://scholar.google.com/citations?user=tyYxiXoAAAAJ),  [Wei Long](https://scholar.google.com/citations?user=CsVTBJoAAAAJ),  [Minghao Han](https://scholar.google.com/citations?hl=en&user=IqrXj74AAAAJ),  [Weiyi You](https://scholar.google.com/citations?user=q4uALoAAAAAJ),  [Shuhang Gu](https://scholar.google.com/citations?user=-kSTt40AAAAJ)
 
-[![arXiv](https://img.shields.io/badge/arXiv-2505.12742-b31b1b.svg)](https://arxiv.org/abs/2505.12742)
+[![arXiv](https://img.shields.io/badge/arXiv-2505.12742-b31b1b.svg)](https://arxiv.org/abs/2505.12742v3)
 [![GitHub Stars](https://img.shields.io/github/stars/LabShuHangGU/MVAR?style=social)](https://github.com/LabShuHangGU/MVAR)
 [![Project Page](https://img.shields.io/badge/Project-Page-green?style=flat&logo=googlechrome&logoColor=white)](https://nuanbaobao.github.io/MVAR)
 
