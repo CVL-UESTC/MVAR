@@ -261,6 +261,8 @@ python utils/evaluations/c2i/evaluator.py \
 
 ---
 
+## Related Repositories
+[NATTEN](https://github.com/SHI-Labs/NATTEN), [VAR](https://github.com/FoundationVision/VAR)
 
 ## 📩 Contact
 

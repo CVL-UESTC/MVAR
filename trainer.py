@@ -463,7 +463,7 @@ class MVARTrainer(object):
                 prog_ed = self.refine_step + cur_prog % ratio_k if ratio_k != 1 else self.refine_step + (cur_prog - 1)
                 L_bg, L_ed = self.begin_ends[prog_ed][0], self.begin_ends[prog_ed][1]
 
-            print(f"[VARTrainer.train_one_ep] ratio_k:{ratio_k} cur_prog: {cur_prog}, prog_ed: {prog_ed}, L_bg: {L_bg}, L_ed: {L_ed}, len {L_ed - L_bg}")
+            # print(f"[MVARTrainer.train_one_ep] ratio_k:{ratio_k} cur_prog: {cur_prog}, prog_ed: {prog_ed}, L_bg: {L_bg}, L_ed: {L_ed}, len {L_ed - L_bg}")
 
 
             gt_Bl = gt_BL[:, L_bg:L_ed, ...]  # l = sum(i^2)
@@ -588,7 +588,7 @@ class MVARTrainer(object):
                 prog_ed = self.refine_step + cur_prog % ratio_k if ratio_k != 1 else self.refine_step + (cur_prog - 1)
                 L_bg, L_ed = self.begin_ends[prog_ed][0], self.begin_ends[prog_ed][1]
 
-            print(f"[VARTrainer.train_one_ep] ratio_k:{ratio_k} cur_prog: {cur_prog}, prog_ed: {prog_ed}, L_bg: {L_bg}, L_ed: {L_ed}, len {L_ed - L_bg}")
+            # print(f"[MVARTrainer.train_one_ep] ratio_k:{ratio_k} cur_prog: {cur_prog}, prog_ed: {prog_ed}, L_bg: {L_bg}, L_ed: {L_ed}, len {L_ed - L_bg}")
 
 
             gt_Bl = gt_BL[:, L_bg:L_ed, ...]  # l = sum(i^2)
