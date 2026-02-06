@@ -251,6 +251,8 @@ python run_mvar_evaluate.py \
 
 
 6.2. **Run evaluation:**
+
+We use the [OpenAI's FID evaluation toolkit](https://github.com/openai/guided-diffusion/tree/main/evaluations) and reference ground truth npz file of [256x256](https://openaipublic.blob.core.windows.net/diffusion/jul-2021/ref_batches/imagenet/256/VIRTUAL_imagenet256_labeled.npz) to evaluate FID, IS, Precision, and Recall.
 ```bash
 python utils/evaluations/c2i/evaluator.py \
   --ref_batch VIRTUAL_imagenet256_labeled.npz \
