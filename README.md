@@ -114,11 +114,11 @@ We provide various MVAR models accessible via our [Huggingface Repo](https://hug
 | Model | FID ↓ | IS ↑ | sFID ↓ | Prec. ↑ | Recall ↑ | Params | HF Weights 🤗 |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
 | **MVAR-d16** | 3.01 | 285.17 | 6.26 | 0.85 | 0.51 | 310M | [link](https://huggingface.co/CVLUESTC/MVAR/blob/main/mvar-d16.pth) |
-| **MVAR-d16**$^{\dag}$ | 3.37 | 295.35 | 6.10 | 0.86 | 0.48 | 310M | [link](https://huggingface.co/CVLUESTC/MVAR/blob/main/mvar-finetune-d16.pth) |
-| **MVAR-d20**$^{\dag}$ | 2.83 | 294.31 | 6.12 | 0.85 | 0.52 | 600M | [link](https://huggingface.co/CVLUESTC/MVAR/blob/main/mvar-finetune-d20.pth) |
-| **MVAR-d24**$^{\dag}$ | 2.15 | 298.85 | 5.62 | 0.84 | 0.56 | 1.0B | [link](https://huggingface.co/CVLUESTC/MVAR/blob/main/mvar-finetune-d24.pth) |
+| **MVAR-d16**$^{*}$ | 3.37 | 295.35 | 6.10 | 0.86 | 0.48 | 310M | [link](https://huggingface.co/CVLUESTC/MVAR/blob/main/mvar-finetune-d16.pth) |
+| **MVAR-d20**$^{*}$ | 2.83 | 294.31 | 6.12 | 0.85 | 0.52 | 600M | [link](https://huggingface.co/CVLUESTC/MVAR/blob/main/mvar-finetune-d20.pth) |
+| **MVAR-d24**$^{*}$ | 2.15 | 298.85 | 5.62 | 0.84 | 0.56 | 1.0B | [link](https://huggingface.co/CVLUESTC/MVAR/blob/main/mvar-finetune-d24.pth) |
 
-> **Note:** $^{\dag}$ indicates models fine-tuned from VAR weights on ImageNet.
+> **Note:** $^{*}$ indicates models fine-tuned from VAR weights on ImageNet.
 
 ---
 
@@ -245,9 +245,9 @@ python run_mvar_evaluate.py \
 
 *Suggested CFG for models:*
 * **d16:** cfg=2.7, top_p=0.99, top_k=1200
-* **d16:**$^{\dag}$ cfg=2.0, top_p=0.99, top_k=1200
-* **d20:**$^{\dag}$ cfg=1.5, top_p=0.96, top_k=900
-* **d24:**$^{\dag}$ cfg=1.4, top_p=0.96, top_k=900
+* **d16:**$^{*}$ cfg=2.0, top_p=0.99, top_k=1200
+* **d20:**$^{*}$ cfg=1.5, top_p=0.96, top_k=900
+* **d24:**$^{*}$ cfg=1.4, top_p=0.96, top_k=900
 
 
 6.2. **Run evaluation:**
