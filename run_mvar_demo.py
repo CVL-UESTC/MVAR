@@ -29,7 +29,7 @@ def parse_args():
     parser.add_argument(
         "--vae_ckpt",
         type=str,
-        default="../pretrained/FoundationVision/var/vae_ch160v4096z32.pth",
+        default="./pretrained/FoundationVision/var/vae_ch160v4096z32.pth",
         help="",
     )
     parser.add_argument(

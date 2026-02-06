@@ -142,8 +142,10 @@ We provide various MVAR models accessible via our [Huggingface Repo](https://hug
    ```
 
 3. **Install [Neighborhood Attention](https://natten.org/install/):**
+  
+   You can also use the .whl file provided in [HuggingFace](https://huggingface.co/CVLUESTC/MVAR/blob/main/natten-0.21.1%2Btorch280cu128-cp311-cp311-linux_x86_64.whl)
+
    ```bash
-   # Or use the .whl file provided in [HuggingFace](https://huggingface.co/CVLUESTC/MVAR/blob/main/natten-0.21.1%2Btorch280cu128-cp311-cp311-linux_x86_64.whl)
    pip install natten-0.21.1+torch280cu128-cp311-cp311-linux_x86_64.whl
    ```
 

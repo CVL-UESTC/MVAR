@@ -26,7 +26,7 @@ except ImportError as e:
 
 class Args(Tap):
     vae_ckpt: str = (
-        "../pretrained/FoundationVision/var/vae_ch160v4096z32.pth"
+        "./pretrained/FoundationVision/var/vae_ch160v4096z32.pth"
     )
 
     refine_step: int = 8
@@ -34,7 +34,7 @@ class Args(Tap):
     ratio_k: int = 8
     kernel_size: int = 7
 
-    data_path: str = "../DATA/imagenet-1k"
+    data_path: str = "./DATA/imagenet-1k"
     exp_name: str = ""
     # VAE
     vfast: int = (
@@ -46,7 +46,7 @@ class Args(Tap):
     )
     depth: int = 16  # MVAR depth
     var_ckpt: str = (
-        f"../pretrained/FoundationVision/var/var_d{depth}.pth"
+        f"./pretrained/FoundationVision/var/var_d{depth}.pth"
     )
     finetune_from_var: bool = False
     # MVAR initialization
