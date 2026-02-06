@@ -244,10 +244,10 @@ python run_mvar_evaluate.py \
 
 
 *Suggested CFG for models:*
-* **d16:** cfg=2.7, top_p=0.99, top_k=1200
-* **d16:**$^{*}$ cfg=2.0, top_p=0.99, top_k=1200
-* **d20:**$^{*}$ cfg=1.5, top_p=0.96, top_k=900
-* **d24:**$^{*}$ cfg=1.4, top_p=0.96, top_k=900
+* **d16**: cfg=2.7, top_p=0.99, top_k=1200
+* **d16**$^{*}$: cfg=2.0, top_p=0.99, top_k=1200
+* **d20**$^{*}$: cfg=1.5, top_p=0.96, top_k=900
+* **d24**$^{*}$: cfg=1.4, top_p=0.96, top_k=900
 
 
 6.2. **Run evaluation:**
