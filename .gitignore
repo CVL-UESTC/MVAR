@@ -1,0 +1,33 @@
+*.swp
+**/__pycache__/**
+**/.ipynb_checkpoints/**
+.DS_Store
+.idea/*
+.vscode/*
+llava/
+_vis_cached/
+_auto_*
+ckpt/
+log/
+tb*/
+img*/
+local_output*
+*.pth
+*.pth.tar
+*.ckpt
+*.log
+# *.txt
+# *.ipynb
+outputs/test/*
+outputs/Fid/*.npz
+outputs/Fid/*/*.png
+outputs/label_list/*
+pretrained/*
+third_party/*
+/*.png
+files/*
+vis.ipynb
+classify_image_graph_def.pb
+utils/evaluations/VIRTUAL_imagenet256_labeled.npz
+checkpoints/*
+*.sh

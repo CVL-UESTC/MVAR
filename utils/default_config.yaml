@@ -1,0 +1,12 @@
+compute_environment: LOCAL_MACHINE
+distributed_type: MULTI_GPU
+fsdp_config: {}
+machine_rank: 0
+main_process_ip: null
+main_process_port: 29502
+main_training_function: main
+mixed_precision: bf16
+num_machines: 1
+num_processes: 2
+gpu_ids: 2,3
+use_cpu: false
