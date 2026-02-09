@@ -30,7 +30,7 @@ class Args(Tap):
     )
 
     refine_step: int = 8
-    use_cached: bool = True
+    use_cached: bool = False
     ratio_k: int = 8
     kernel_size: int = 7
 

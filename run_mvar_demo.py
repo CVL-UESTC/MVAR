@@ -35,7 +35,7 @@ def parse_args():
     parser.add_argument(
         "--infer_patch_nums",
         type=str,
-        default="1_2_3_4_5_6_7_10_13_16",
+        default="1_2_3_4_5_6_8_10_13_16",
     )
     parser.add_argument("--refine_step", type=int, default=8, help="")
     parser.add_argument("--kernel_size", type=int, default=7, help="")
