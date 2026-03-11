@@ -8,9 +8,9 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2505.12742-b31b1b.svg)](https://arxiv.org/abs/2505.12742v3)
 [![GitHub Stars](https://img.shields.io/github/stars/LabShuHangGU/MVAR?style=social)](https://github.com/LabShuHangGU/MVAR)
-[![Project Page](https://img.shields.io/badge/Project-Page-green?style=flat&logo=googlechrome&logoColor=white)](https://nuanbaobao.github.io/MVAR)
-[![huggingface](https://img.shields.io/badge/%F0%9F%A4%97%20Weights-CVLUESTC/MVAR-yellow)](https://huggingface.co/CVLUESTC/MVAR)
-
+[![Project Page](https://img.shields.io/badge/Project-Page-green?style=flat)](https://nuanbaobao.github.io/MVAR)
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-CVLUESTC%2FMVAR-yellow?style=flat)](https://huggingface.co/CVLUESTC/MVAR)
+[![Poster](https://img.shields.io/badge/Poster-PDF-blue?style=flat)](asset/mvar.pdf)
 </div>
 
 ⭐ If this work is helpful for you, please help star this repo. Thanks! 🤗
