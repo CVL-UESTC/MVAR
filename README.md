@@ -10,6 +10,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/LabShuHangGU/MVAR?style=social)](https://github.com/LabShuHangGU/MVAR)
 [![Project Page](https://img.shields.io/badge/Project-Page-green?style=flat)](https://nuanbaobao.github.io/MVAR)
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-CVLUESTC%2FMVAR-yellow?style=flat)](https://huggingface.co/CVLUESTC/MVAR)
+[![Slides](https://img.shields.io/badge/Slides-PDF-red?style=flat)](asset/MVAR_slides.pdf)
 [![Poster](https://img.shields.io/badge/Poster-PDF-blue?style=flat)](asset/mvar.pdf)
 </div>
 
