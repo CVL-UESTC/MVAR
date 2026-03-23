@@ -302,25 +302,18 @@ def main_training():
             or (ep + 1) == args.ep
         )
         if is_val_and_also_saving:
-            if not args.use_cached:
-                ### use image to train ####
-                (
-                    val_loss_mean,
-                    val_loss_tail,
-                    val_acc_mean,
-                    val_acc_tail,
-                    kw,
-                    tot,
-                    cost,
-                ) = trainer.eval_ep(
-                    ld_val,
-                )
-            else:
-                val_loss_mean, val_loss_tail, val_acc_mean, val_acc_tail, kw, tot, cost = (
-                    trainer.eval_ep_cached(
-                        ld_val,
-                    )
-                )
+            (
+                val_loss_mean,
+                val_loss_tail,
+                val_acc_mean,
+                val_acc_tail,
+                kw,
+                tot,
+                cost,
+            ) = trainer.eval_ep(
+                ld_val,
+                use_cached=args.use_cached,
+            )
 
             best_updated = best_val_loss_tail > val_loss_tail
             best_val_loss_mean, best_val_loss_tail = min(
@@ -376,21 +369,8 @@ def main_training():
                 )
             dist.barrier()
 
-        if not args.use_cached:
-            stats, (sec, remain_time, finish_time) = (
-                trainer.train_one_ep_ratio_k(
-                    ep=ep,
-                    is_first_ep=(ep == start_ep),
-                    start_it=(start_it if ep == start_ep else 0),
-                    args=args,
-                    tb_lg=tb_lg,
-                    ld_or_itrt=ld_train,
-                    iters_train=iters_train,
-                    ratio_k=args.ratio_k,
-                )
-            )
-        else:
-            stats, (sec, remain_time, finish_time) = trainer.train_one_ep_cached_ratio_k(
+        stats, (sec, remain_time, finish_time) = (
+            trainer.train_one_ep_ratio_k(
                 ep=ep,
                 is_first_ep=(ep == start_ep),
                 start_it=(start_it if ep == start_ep else 0),
@@ -399,8 +379,9 @@ def main_training():
                 ld_or_itrt=ld_train,
                 iters_train=iters_train,
                 ratio_k=args.ratio_k,
+                use_cached=args.use_cached,
             )
-
+        )
 
         L_mean, L_tail, acc_mean, acc_tail, grad_norm = (
             stats["Lm"],
