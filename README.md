@@ -256,6 +256,23 @@ python run_mvar_evaluate.py \
 6.2. **Run evaluation:**
 
 We use the [OpenAI's FID evaluation toolkit](https://github.com/openai/guided-diffusion/tree/main/evaluations) and reference ground truth npz file of [256x256](https://openaipublic.blob.core.windows.net/diffusion/jul-2021/ref_batches/imagenet/256/VIRTUAL_imagenet256_labeled.npz) to evaluate FID, IS, Precision, and Recall.
+First, you can create an environment using Docker, consistent with the setup in [OpenAI's FID evaluation toolkit](https://github.com/openai/guided-diffusion/tree/main/evaluations):
+
+```bash
+docker run --rm -it \
+    --gpus all \
+    -v /data0/home/zhangjinhua/:/workspace/ \
+    -v /data0/home/zhangjinhua:/data0/home/zhangjinhua \
+    -w /workspace/ \
+    nvcr.io/nvidia/tensorflow:25.02-tf2-py3 bash
+
+# Verify GPU availability
+python -c "import tensorflow as tf; print('GPU devices:', tf.config.list_physical_devices('GPU'))"
+# Expected output:
+# [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+```
+Then run the evaluation script:
+
 ```bash
 python utils/evaluations/c2i/evaluator.py \
   --ref_batch VIRTUAL_imagenet256_labeled.npz \
