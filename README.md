@@ -51,13 +51,11 @@
 Please cite our work if it is helpful for your research:
 
 ```bibtex
-@inproceedings{
-zhang2026mvar,
-title={{MVAR}: Visual Autoregressive Modeling with Scale and Spatial Markovian Conditioning},
-author={Jinhua Zhang and Wei Long and Minghao Han and Weiyi You and Shuhang Gu},
-booktitle={The Fourteenth International Conference on Learning Representations},
-year={2026},
-url={https://openreview.net/forum?id=mkr1ZrwgeJ}
+@article{zhang2025mvar,
+  title={Mvar: Visual autoregressive modeling with scale and spatial markovian conditioning},
+  author={Zhang, Jinhua and Long, Wei and Han, Minghao and You, Weiyi and Gu, Shuhang},
+  journal={arXiv preprint arXiv:2505.12742},
+  year={2025}
 }
 ```
 
